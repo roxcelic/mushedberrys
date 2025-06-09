@@ -35,24 +35,29 @@ export function ThemedText({
 
 const styles = StyleSheet.create({
   default: {
+    fontFamily: 'PixelifySans',
     fontSize: 16,
     lineHeight: 24,
   },
   defaultSemiBold: {
+    fontFamily: 'PixelifySans',
     fontSize: 16,
     lineHeight: 24,
     fontWeight: '600',
   },
   title: {
+    fontFamily: 'PixelifySans',
     fontSize: 32,
     fontWeight: 'bold',
     lineHeight: 32,
   },
   subtitle: {
+    fontFamily: 'PixelifySans',
     fontSize: 20,
     fontWeight: 'bold',
   },
   link: {
+    fontFamily: 'PixelifySans',
     lineHeight: 30,
     fontSize: 16,
     color: '#0a7ea4',
