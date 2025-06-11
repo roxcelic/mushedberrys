@@ -5,37 +5,7 @@ import { Image } from 'expo-image';
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 
-
 export default class HomeScreen extends Component {
-  run = () => {
-      setInterval(() => {
-        this.setState({number: this.state.number + 1});
-      }, 1000);
-}
-
-
-   constructor() {
-      super();
-      this.state = {
-         myText: '1',
-         number: 0
-      }
-      this.run();
-   }
-
-  updateText = () => {
-    switch (this.state.myText) {
-      case '1': 
-        this.setState({myText: '2'});
-
-        break;
-      case '2': 
-        this.setState({myText: '1'});
-
-        break;
-    }
-  }
-   
   render() {
     return (
       <Main
@@ -51,21 +21,15 @@ export default class HomeScreen extends Component {
             Hiiiiiii, this is really really really stupid lmaos
           </ThemedText>
           <Image
-          style={styles.tinyLogo}
-          source={{
-            uri: 'https://i.pinimg.com/736x/de/f4/55/def455a0b9b70d101e71429e1fb092fa.jpg',
-          }}
-        />
-        <ThemedText>
-          hehehehe i added an image frick you
-        </ThemedText>
+            style={styles.tinyLogo}
+            source={{
+              uri: 'https://i.pinimg.com/736x/de/f4/55/def455a0b9b70d101e71429e1fb092fa.jpg',
+            }}
+          />
+          <ThemedText>
+            hehehehe i added an image frick you
+          </ThemedText>
         </ThemedView>
-        <ThemedView>
-          <ThemedText onPress = {this.updateText}>
-            {this.state.number}
-            </ThemedText>
-        </ThemedView>
-      
       </Main>
     );
   }
@@ -92,5 +56,5 @@ const styles = StyleSheet.create({
     width: 250,
     height: 250,
     borderRadius: 13
-  },
+  }
 });
