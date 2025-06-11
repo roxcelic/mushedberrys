@@ -1,3 +1,3 @@
 export const Var = {
-    apiURL: ""
+    apiURL: "https://api.roxcelic.love/api/v1"
 };
